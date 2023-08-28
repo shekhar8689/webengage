@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You Page</title>
+</head>
+<body>
+    <div class="page">
+        <div class="thankyou-page">
+            <h3>Thanks a ton for taking out your precious time and for completing the survey</h3>
+            <p>Email Address: <span id="email"></span></p>
+            <p>Mobile Number: <span id="countryCode"></span>&nbsp&nbsp<span id="mobileNumber"></span></span></p>
+        </div>
+    </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const email = params.get("email");
+        const mobileNumber = params.get("mobileNumber");
+        const countryCode = params.get("countryCode");
+
+
+        document.getElementById("email").textContent = email;
+        document.getElementById("countryCode").textContent = countryCode;
+        document.getElementById("mobileNumber").textContent = mobileNumber;
+    </script>
+</body>
+</html>

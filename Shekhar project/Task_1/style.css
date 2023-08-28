@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height:100%;
+    width: 100%;
+}
+.content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 50%;
+}
+.left img{
+    height: 100%;
+}
+.right{
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.right img{
+    padding: 1vw 4vw;
+    height: 25%;
+    width: 100%;
+}
+.right h1{
+    text-align: center;
+    font-size: 4vw;
+    line-height: 7vw;
+    justify-content: center;
+    font-weight: 100%;
+}
+.right h3{
+    text-align: center;
+    font-size: 2vw;
+
+
+}
+.right .surveyForm{
+    padding: 2vw 3vw;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.right .surveyForm .email{
+    margin-top: 2vw;
+    line-height: 2vw;
+    height: 4vw;
+    width: 90%;
+    font-size: medium;
+}
+.right .surveyForm .input-group{
+    margin-top: 2vw;
+    display: flex;
+    height: 4vw;
+    line-height: 2vw;
+    width: 90%;
+}
+.input-group .countryCode{
+    width: 15%;
+}
+.input-group .mobileNumber{
+    width: 100%;
+}
+.submitButton{
+    margin-top: 2vw;
+    height: 4vw;
+    width: 90%;
+    font-size: medium;
+}
+
+
+
+@media (max-width:600px) {
+    .content{
+        height: 100%;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 40%;
+        padding: 4vw 6vw;
+    }
+    .right{
+        width: 100%;
+        height: 60%;
+    }
+    .right h1{
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+    .right h3{
+        font-size: 5vw;
+    }
+    .right .surveyForm{
+        height: 100%;
+        width: 100%;
+        margin: 2vw 4vw;
+        padding: 3vw 4vw;
+    }
+    .right .surveyForm .email{
+        margin-top: 2vw;
+        line-height: 2vw;
+        height: 12vw;
+        width: 90%;
+        font-size: medium;
+    }
+    .right .surveyForm .input-group{
+        height: 12vw;
+        width: 90%;
+        margin-top: 5vw;
+    }
+    .input-group .countryCode{
+        margin-top: 2vw;
+        width: 20%;
+        height: 12vw;
+    }
+    .input-group .mobileNumber{
+        margin-top: 2vw;
+        width: 100%;
+        height: 12vw;
+    }
+    .submitButton{
+        line-height: 2vw;
+        height: 12vw;
+        width: 90%;
+        font-size: medium;
+        margin-top: 10vw;
+    }
+}
